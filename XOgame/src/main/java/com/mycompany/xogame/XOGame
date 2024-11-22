@@ -102,7 +102,7 @@ public class XOGame extends JFrame {
         for (int i = 0; i < 3; i++) {
             if (board[0][i] != null && board[0][i].equals(board[1][i]) && board[0][i].equals(board[2][i])) {
                 gameOver = true;
-                JOptionPane.showMessageDialog(XOGame.this, "Usted es el Gananador " + board[0][i]);
+                JOptionPane.showMessageDialog(XOGame.this, "Usted es el Ganador " + board[0][i]);
                 askToPlayAgain();
                 return;
             }
@@ -110,13 +110,13 @@ public class XOGame extends JFrame {
         // Verificar diagonal
         if (board[0][0] != null && board[0][0].equals(board[1][1]) && board[0][0].equals(board[2][2])) {
             gameOver = true;
-            JOptionPane.showMessageDialog(XOGame.this, "Usted es el Gananador " + board[0][0]);
+            JOptionPane.showMessageDialog(XOGame.this, "Usted es el Ganador " + board[0][0]);
             askToPlayAgain();
             return;
         }
         if (board[0][2] != null && board[0][2].equals(board [1][1]) && board[0][2].equals(board[2][0])) {
             gameOver = true;
-            JOptionPane.showMessageDialog(XOGame.this, "Usted es el Gananador " + board[0][2]);
+            JOptionPane.showMessageDialog(XOGame.this, "Usted es el Ganador " + board[0][2]);
             askToPlayAgain();
             return;
         }
